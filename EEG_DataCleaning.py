@@ -3,9 +3,6 @@ import numpy as np
 import os
 import pickle
 
-# aws s3 cp s3://eeg-classification/ . --recursive
-# scp -i "Abhishaike.pem" /Users/abhishaikemahajan/PycharmProjects/RandomMLProjects/EEG_Project/EEG_DataCleaning.py ubuntu@ec2-34-215-117-78.us-west-2.compute.amazonaws.com:
-
 def BuildEvents(signals, times, EventData):
     [numEvents, z] = (EventData.shape)  # numEvents is equal to # of rows of the .rec file
     fs = 250.0
