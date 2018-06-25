@@ -14,13 +14,6 @@ from model_architectures import *
 import os
 from keras.models import load_model
 
-# aws s3 cp s3://attention-project/ . --recursive
-# scp -i "Abhishaike.pem" /Users/abhishaikemahajan/PycharmProjects/RandomMLProjects/EEG_Project/EEG_Classification_Final.py ubuntu@ec2-54-200-3-112.us-west-2.compute.amazonaws.com:
-# scp -i "Abhishaike.pem" ubuntu@ec2-54-218-252-9.us-west-2.compute.amazonaws.com:Weights/BestWeights_twoway.h5 .
-
-# scp -i "Abhishaike.pem" -r ubuntu@ec2-54-200-3-112.us-west-2.compute.amazonaws.com:Labels/ /Users/abhishaikemahajan/PycharmProjects/RandomMLProjects/EEG_Project/
-
-
 def save_pickle(object, filename):
     with open(filename, 'wb') as f:
         pickle.dump(object, f)
