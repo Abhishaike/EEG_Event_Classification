@@ -11,9 +11,6 @@ from sklearn.utils import class_weight
 import numpy as np
 import collections
 
-
-# scp -i "Abhishaike.pem" /Users/abhishaikemahajan/PycharmProjects/RandomMLProjects/EEG_Project/model_architectures.py ubuntu@ec2-54-200-3-112.us-west-2.compute.amazonaws.com:
-
 def nochannel_dil(classes):
     InputSignal = Input(shape=(250, 22))
 
